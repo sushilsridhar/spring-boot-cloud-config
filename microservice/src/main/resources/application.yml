@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microservice
+  profiles:
+    active: dev1
+  cloud:
+    config:
+      uri: http://localhost:9090
+      label: master

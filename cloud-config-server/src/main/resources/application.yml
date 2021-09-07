@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: cloudconfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sushilsridhar/cloud-config-git-repo.git
+          username: sushilsridhar
+          password: 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
+          search-paths:
+            - configurations/common/
+            - configurations/application/
+          basedir: local-cloud-config
+          default-label: master
